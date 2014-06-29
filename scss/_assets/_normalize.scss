@@ -1,0 +1,56 @@
+/**
+    Normalize
+**/
+
+
+/* Remove all margins and paddings and change `box-sizing` */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Prevent iOS and WP text size adjust after orientation change if user zoom is not disabled */
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+/* Add `display: block` to support HTML5 elements in IE 8/9 and some elements in IE 10/11 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+
+/* Remove border from images inside `a` element in IE 8/9/10 */
+img {
+    border: 0;
+}
+
+
+/* Remove vertical scrollbar in IE 8/9/10/11 */
+textarea {
+    overflow: auto;
+}
+
+
+/* Remove spacing between table cells */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}

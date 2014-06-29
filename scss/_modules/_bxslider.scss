@@ -1,0 +1,36 @@
+/*------------------------------------*\
+    Bxslider
+\*------------------------------------*/
+
+.device-slider {
+    list-style: none;
+}
+
+.bx-prev,
+.bx-next {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 60px;
+    overflow: hidden;
+    text-indent: -1000px;
+    background-color: black; /* temp */
+}
+
+.bx-prev {
+    left: -30px;
+
+    @media (max-width: 680px) {
+        left: 0;
+    }
+}
+
+.bx-next {
+    right: -30px;
+
+    @media (max-width: 680px) {
+        right: 0;
+    }
+}

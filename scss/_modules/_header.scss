@@ -1,0 +1,33 @@
+/*------------------------------------*\
+    Header
+\*------------------------------------*/
+
+.site-logo {
+    display: block;
+    width: 93px;
+    height: 93px;
+    margin: 0 auto 2.5rem;
+    padding: 3px;
+    border-radius: 50%;
+    border: 1px solid #046380;
+}
+
+.site-headline {
+    max-width: 590px;
+    margin: 0 auto 4.5rem;
+
+    > span {
+        display: inline-block;
+        padding: 1rem .7rem;
+        background-color: #fffdd0;
+        white-space: nowrap;
+    }
+}
+
+.site-nav--header {
+    > li {
+        @include breakpoint(bp1) {
+            width: 30%;
+        }
+    }
+}

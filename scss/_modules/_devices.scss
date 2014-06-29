@@ -1,0 +1,52 @@
+/*------------------------------------*\
+    Devices
+\*------------------------------------*/
+
+.device {
+    position: relative;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.device--iphone {
+    width: 325px;
+    height: 620px;
+    background-image: url(../../img/_temp/device--iphone.png);
+
+    @media (max-width: 480px) {
+        width: 280px;
+        height: 534px;
+        background-size: cover;
+    }
+}
+
+.device--android {
+
+}
+
+.device--wp {
+
+}
+
+.device--ipad {
+
+}
+
+.device__content {
+    position: absolute;
+    z-index: 2;
+}
+
+.device__content--iphone {
+    top: 100px;
+    left: 28px;
+    width: 273px;
+    height: 485px;
+
+    @media (max-width: 480px) {
+        top: 87px;
+        left: 24px;
+        width: 235px;
+        height: 417px;
+    }
+}

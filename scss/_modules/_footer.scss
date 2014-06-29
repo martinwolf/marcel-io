@@ -1,0 +1,60 @@
+/*------------------------------------*\
+    Footer
+\*------------------------------------*/
+
+.section--footer {
+    position: relative;
+    padding-bottom: 20rem;
+    background-color: #fbfbfb;
+
+    @include breakpoint(bp2) {
+        padding-bottom: 10rem;
+    }
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        border-radius: 50%;
+    }
+
+    &:before {
+        margin-left: -1.4rem;
+        bottom: 8.4rem;
+        width: 2.8rem;
+        height: 2.8rem;
+        background-color: #fff;
+        border: 1px solid #e1e1e1;
+
+        @include breakpoint(bp2) {
+            bottom: 3.4rem;
+        }
+    }
+
+    &:after {
+        margin-left: -.8rem;
+        bottom: 9rem;
+        width: 1.6rem;
+        height: 1.6rem;
+        background-color: #e1e1e1;
+
+        @include breakpoint(bp2) {
+            bottom: 4rem;
+        }
+    }
+}
+
+.site-nav--footer {
+    > li {
+        @include breakpoint(bp1) {
+            width: 48%;
+        }
+    }
+}
+
+.site-address {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-style: normal;
+}

@@ -1,0 +1,51 @@
+/**
+    Mixins
+**/
+
+@mixin placeholder($color) {
+    &::-webkit-input-placeholder {
+        color: $color;
+    }
+    &:-moz-placeholder {
+        color: $color;
+    }
+    &:-ms-input-placeholder {
+        color: $color;
+    }
+}
+
+@mixin breakpoint($point) {
+    @if $point == bp1 {
+        @media (max-width: 680px) {
+            @content;
+        }
+    }
+    @if $point == bp2 {
+        @media (max-width: 560px) {
+            @content;
+        }
+    }
+    @if $point == bp3 {
+        @media (max-width: 400px) {
+            @content;
+        }
+    }
+    @elseif $point == retina {
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (-o-min-device-pixel-ratio: 2/1) {
+            @content;
+        }
+    }
+}
+
+
+/**
+    Extends
+**/
+
+%clearfix {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}

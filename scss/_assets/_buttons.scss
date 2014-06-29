@@ -1,0 +1,64 @@
+/*------------------------------------*\
+    Buttons
+\*------------------------------------*/
+
+$btn__height: 40px;
+$btn__radius: $btn__height/2;
+
+.btn {
+    display: block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    line-height: $btn__height - 1;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    transition: color .2s ease-in, border .2s ease-in;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:hover, &:focus {
+        color: #000;
+    }
+}
+
+.btn--standard {
+    color: $blue;
+}
+
+.btn--size-normal {
+    width: 100%;
+    height: $btn__height;
+}
+
+.btn--right {
+    border-right: 1px solid;
+    border-top-right-radius: $btn__radius;
+    border-bottom-right-radius: $btn__radius;
+}
+
+.btn--left {
+    border-left: 1px solid;
+    border-top-left-radius: $btn__radius;
+    border-bottom-left-radius: $btn__radius;
+}
+
+.btn--complete {
+    @extend .btn--right;
+    @extend .btn--left;
+}
+
+.btn--middle {
+    border-right: 1px solid;
+    border-left: 1px solid;
+}
+
+.btn--myt {
+    color: $yellow--myt;
+    border-color: $yellow--myt;
+}
+
+.btn--qfm {
+    color: $blue--qfm;
+    border-color: $blue--qfm;
+}
