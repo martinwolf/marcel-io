@@ -91,17 +91,17 @@
             <div class="wrap wrap--slider" id="js_myt-android">
                 <ul class="device-slider">
                     <li>
-                        <div class="device device--iphone">
+                        <div class="device device--android">
                             <img class="device__content device__content--iphone" src="img/_temp/iphone-myt-1.jpg" alt="Lorem">
                         </div>
                     </li>
                     <li>
-                        <div class="device device--iphone">
+                        <div class="device device--android">
                             <img class="device__content device__content--iphone" src="img/_temp/iphone-myt-1.jpg" alt="Lorem">
                         </div>
                     </li>
                     <li>
-                        <div class="device device--iphone">
+                        <div class="device device--android">
                             <img class="device__content device__content--iphone" src="img/_temp/iphone-myt-1.jpg" alt="Lorem">
                         </div>
                     </li>

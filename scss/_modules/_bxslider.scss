@@ -16,12 +16,13 @@
     height: 60px;
     overflow: hidden;
     text-indent: -1000px;
-    background-size: 30px;
+    background-image: url(../img/arrows-sprite.svg);
+    background-size: 180px;
 
     @include breakpoint(bp2) {
         width: 20px;
         height: 40px;
-        background-size: 20px;
+        background-size: 120px;
     }
 }
 
@@ -37,7 +38,7 @@
     }
 
     .section--myt & {
-        background-image: url(../img/myt-arrow-left.svg);
+        background-position: 0 0;
     }
 }
 
@@ -53,6 +54,10 @@
     }
 
     .section--myt & {
-        background-image: url(../img/myt-arrow-right.svg);
+        background-position: -30px 0;
+
+        @include breakpoint(bp2) {
+            background-position: -20px 0;
+        }
     }
 }
