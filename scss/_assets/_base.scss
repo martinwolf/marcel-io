@@ -28,11 +28,17 @@ a {
 }
 
 .is-hidden {
-    display: none;
+    opacity: 0;
+}
+
+.wrap--slider.is-hidden {
+    position: absolute;
+    top: 0;
 }
 
 .is-active {
-    display: block;
+    opacity: 1;
+    z-index: 2;
 }
 
 .fadeout {
@@ -40,8 +46,11 @@ a {
 }
 
 .fadein {
-    display: block;
     animation: fadein .75s ease-in-out;
+}
+
+.wrap--slider.fadein {
+    position: static;
 }
 
 .wrap {
@@ -49,8 +58,20 @@ a {
     max-width: 640px;
 }
 
-.wrap--slider {
+.wrap--slider,
+.wrap--sliders{
     position: relative;
+}
+
+.wrap--desc {
+    max-width: 680px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    @include breakpoint(bp2) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 
 .site-nav {

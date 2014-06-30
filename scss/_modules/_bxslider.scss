@@ -20,17 +20,25 @@
 }
 
 .bx-prev {
-    left: -30px;
+    left: 0;
 
-    @media (max-width: 680px) {
-        left: 0;
+    @include breakpoint(bp1) {
+        left: 2rem;
+    }
+
+    @include breakpoint(bp2) {
+        left: 1rem;
     }
 }
 
 .bx-next {
-    right: -30px;
+    right: 0;
 
-    @media (max-width: 680px) {
-        right: 0;
+    @include breakpoint(bp1) {
+        right: 2rem;
+    }
+
+    @include breakpoint(bp2) {
+        right: 1rem;
     }
 }

@@ -32,7 +32,7 @@ gulp.task('js', function() {
         .pipe(jshint.reporter('default'))
         .pipe(addsrc('./js/*/*.js'))
         .pipe(concat('scripts.min.js'))
-        .pipe(uglify())
+        //.pipe(uglify())
         .pipe(gulp.dest('./dist/js'));
 });
 

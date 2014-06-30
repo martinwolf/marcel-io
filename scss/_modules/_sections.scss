@@ -3,23 +3,20 @@
 \*------------------------------------*/
 
 .section {
-    padding-left: 2rem;
-    padding-right: 2rem;
     border-bottom: 1px solid #dadada;
-
-    @include breakpoint(bp3) {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
 }
 
 .section--standard {
     padding-top: 10rem;
+    padding-right: 2rem;
     padding-bottom: 10rem;
+    padding-left: 2rem;
 
     @include breakpoint(bp2) {
         padding-top: 6rem;
+        padding-right: 1rem;
         padding-bottom: 6rem;
+        padding-left: 1rem;
     }
 }
 
