@@ -27,6 +27,7 @@
 </head>
 
 <body>
+    <?php /* include_once("dist/img/shapes.svg"); */ ?> 
 
     <header class="section section--standard">
         <div class="wrap site-header">
@@ -135,25 +136,27 @@
             <h2 class="beta">Placescore</h2>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
         </div>
-            
-        <div class="wrap wrap--slider">
-            <ul class="device-slider">
-                <li>
-                    <div class="device device--iphone">
-                        <img class="device__content device__content--iphone" src="img/_temp/iphone-myt-1.jpg" alt="Lorem">
-                    </div>
-                </li>
-                <li>
-                    <div class="device device--iphone">
-                        <img class="device__content device__content--iphone" src="img/_temp/iphone-myt-1.jpg" alt="Lorem">
-                    </div>
-                </li>
-                <li>
-                    <div class="device device--iphone">
-                        <img class="device__content device__content--iphone" src="img/_temp/iphone-myt-1.jpg" alt="Lorem">
-                    </div>
-                </li>
-            </ul>
+
+        <div class="wrap wrap--sliders"> 
+            <div class="wrap wrap--slider">
+                <ul class="device-slider">
+                    <li>
+                        <div class="device device--iphone">
+                            <img class="device__content device__content--iphone" src="img/_temp/iphone-myt-1.jpg" alt="Lorem">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="device device--iphone">
+                            <img class="device__content device__content--iphone" src="img/_temp/iphone-myt-1.jpg" alt="Lorem">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="device device--iphone">
+                            <img class="device__content device__content--iphone" src="img/_temp/iphone-myt-1.jpg" alt="Lorem">
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 

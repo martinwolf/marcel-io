@@ -7,6 +7,8 @@ var gulp         = require('gulp'),
     concat       = require('gulp-concat'),
     uglify       = require('gulp-uglify'),
     addsrc       = require('gulp-add-src'),
+    svgstore     = require('gulp-svgstore'),
+    svgmin       = require('gulp-svgmin'),
     watch        = require('gulp-watch'),
     livereload   = require('gulp-livereload'),
     notify       = require('gulp-notify');
@@ -34,6 +36,21 @@ gulp.task('js', function() {
         .pipe(concat('scripts.min.js'))
         //.pipe(uglify())
         .pipe(gulp.dest('./dist/js'));
+});
+
+
+gulp.task('svgmin', function() {
+    gulp.src('./img/svg/*.svg')
+        .pipe(svgmin())
+        .pipe(gulp.dest('./dist/img/'));
+});
+
+
+gulp.task('svgshapes', function() {
+    gulp.src('./img/svgshapes/*.svg')
+        .pipe(svgmin())
+        .pipe(svgstore({fileName: 'shapes.svg', prefix: 'shape-', onlySvg: true, emptyFills: true}))
+        .pipe(gulp.dest('./dist/img/'));
 });
 
 

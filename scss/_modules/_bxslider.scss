@@ -16,7 +16,7 @@
     height: 60px;
     overflow: hidden;
     text-indent: -1000px;
-    background-color: black; /* temp */
+    background-size: 30px;
 }
 
 .bx-prev {
@@ -29,6 +29,10 @@
     @include breakpoint(bp2) {
         left: 1rem;
     }
+
+    .section--myt & {
+        background-image: url(../img/myt-arrow-left.svg);
+    }
 }
 
 .bx-next {
@@ -40,5 +44,9 @@
 
     @include breakpoint(bp2) {
         right: 1rem;
+    }
+
+    .section--myt & {
+        background-image: url(../img/myt-arrow-right.svg);
     }
 }

@@ -11,12 +11,13 @@
 .device--iphone {
     width: 325px;
     height: 620px;
-    background-image: url(../../img/_temp/device--iphone.png);
+    background-image: url(../img/iphone.svg);
+    background-size: 325px;
 
     @media (max-width: 480px) {
         width: 230px;
         height: 439px;
-        background-size: cover;
+        background-size: 230px;
     }
 }
 
