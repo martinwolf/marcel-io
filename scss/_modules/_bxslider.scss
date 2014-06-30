@@ -17,6 +17,12 @@
     overflow: hidden;
     text-indent: -1000px;
     background-size: 30px;
+
+    @include breakpoint(bp2) {
+        width: 20px;
+        height: 40px;
+        background-size: 20px;
+    }
 }
 
 .bx-prev {
