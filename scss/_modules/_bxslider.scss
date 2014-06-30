@@ -40,6 +40,22 @@
     .section--myt & {
         background-position: 0 0;
     }
+
+    .section--psc & {
+        background-position: -60px 0;
+
+        @include breakpoint(bp2) {
+            background-position: -40px 0;
+        }
+    }
+
+    .section--qfm & {
+        background-position: -120px 0;
+
+        @include breakpoint(bp2) {
+            background-position: -80px 0;
+        }
+    }
 }
 
 .bx-next {
@@ -58,6 +74,22 @@
 
         @include breakpoint(bp2) {
             background-position: -20px 0;
+        }
+    }
+
+    .section--psc & {
+        background-position: -90px 0;
+
+        @include breakpoint(bp2) {
+            background-position: -60px 0;
+        }
+    }
+
+    .section--qfm & {
+        background-position: -150px 0;
+
+        @include breakpoint(bp2) {
+            background-position: -100px 0;
         }
     }
 }

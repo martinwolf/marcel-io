@@ -7,14 +7,17 @@ var gulp         = require('gulp'),
     concat       = require('gulp-concat'),
     uglify       = require('gulp-uglify'),
     addsrc       = require('gulp-add-src'),
-    svgstore     = require('gulp-svgstore'),
     svgmin       = require('gulp-svgmin'),
     svgsprites   = require('gulp-svg-sprites'),
     watch        = require('gulp-watch'),
     livereload   = require('gulp-livereload'),
     notify       = require('gulp-notify');
 
-var svg = svgsprites.svg;
+var svg = svgsprites.svg,
+    spriteconfig = {
+        className: ".shape--%f",
+        generatePreview: false
+    };
 
 
 gulp.task('sass', function() {
@@ -37,7 +40,7 @@ gulp.task('js', function() {
         .pipe(jshint.reporter('default'))
         .pipe(addsrc('./js/*/*.js'))
         .pipe(concat('scripts.min.js'))
-        //.pipe(uglify())
+        .pipe(uglify())
         .pipe(gulp.dest('./dist/js'));
 });
 
@@ -49,23 +52,10 @@ gulp.task('svgmin', function() {
 });
 
 
-gulp.task('svgshapes', function() {
-    gulp.src('./img/svgshapes/*.svg')
-        .pipe(svgmin())
-        .pipe(svgstore({fileName: 'shapes.svg', prefix: 'shape-', onlySvg: true}))
-        .pipe(gulp.dest('./dist/img/'));
-});
-
-
-var spriteconfig = {
-    className: ".shape--%f",
-    generatePreview: false
-};
-
 gulp.task('svgsprites', function() {
     gulp.src('./img/svgshapes/*.svg')
         .pipe(svg(spriteconfig))
-        .pipe(gulp.dest('./dist/img/'));
+        .pipe(gulp.dest('./img/'));
 });
 
 

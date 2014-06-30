@@ -6,23 +6,33 @@
     position: relative;
     margin: 0 auto;
     z-index: 1;
+    background-size: 325px;
+
+    @media (max-width: 480px) {
+        background-size: 230px;
+    }
 }
 
 .device--iphone {
     width: 325px;
     height: 620px;
     background-image: url(../img/iphone.svg);
-    background-size: 325px;
 
     @media (max-width: 480px) {
         width: 230px;
         height: 439px;
-        background-size: 230px;
     }
 }
 
 .device--android {
+    width: 325px;
+    height: 600px;
+    background-image: url(../img/android.svg);
 
+    @media (max-width: 480px) {
+        width: 230px;
+        height: 425px;
+    }
 }
 
 .device--wp {
@@ -49,5 +59,19 @@
         left: 19px;
         width: 194px;
         height: 343px;
+    }
+}
+
+.device__content--android {
+    top: 57px;
+    left: 18px;
+    width: 289px;
+    height: 516px;
+
+    @media (max-width: 480px) {
+        top: 40px;
+        left: 12px;
+        width: 205px;
+        height: 365px;
     }
 }
