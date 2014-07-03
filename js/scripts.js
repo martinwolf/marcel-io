@@ -4,26 +4,21 @@ $(document).ready(function() {
 
     $('.device-slider').each(function(i, slider) {
         sliders[i] = $(slider).bxSlider({
+            mode: 'fade',
             pager: false,
             prevText: 'Previous',
             nextText: 'Next'
         });
     });
 
-    /*deviceSlider = $('.device-slider').bxSlider({
-        pager: false,
-        prevText: 'Previous',
-        nextText: 'Next'
-    });*/
-
     $('.wrap--slider').not('.is-active').addClass('is-hidden');
 
     $('.switcher-list a').on('click', function(ev) {
 
 //        deviceSlider.reloadSlider();
-        $.each(sliders, function(i, slider) {
+        /*$.each(sliders, function(i, slider) {
             slider.reloadSlider();
-        });
+        });*/
 
         var target = $($(this).attr('href'));
 
