@@ -5,6 +5,7 @@ $(document).ready(function() {
     $('.device-slider').each(function(i, slider) {
         sliders[i] = $(slider).bxSlider({
             mode: 'fade',
+            touchEnabled: false,
             pager: false,
             prevText: 'Previous',
             nextText: 'Next'

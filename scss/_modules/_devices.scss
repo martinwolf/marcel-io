@@ -25,7 +25,16 @@
 }
 
 .device--wp {
+    width: 324px;
+    height: 550px;
+    background-image: url(../img/windowsphone.svg);
+    background-size: 324px;
 
+    @media (max-width: 480px) {
+        width: 230px;
+        height: 390px;
+        background-size: 230px;
+    }
 }
 
 .device--ipad {
@@ -62,5 +71,19 @@
         left: 12px;
         width: 205px;
         height: 365px;
+    }
+}
+
+.device__content--wp {
+    top: 54px;
+    left: 24px;
+    width: 276px;
+    height: 460px;
+
+    @media (max-width: 480px) {
+        top: 38px;
+        left: 17px;
+        width: 196px;
+        height: 326px;
     }
 }

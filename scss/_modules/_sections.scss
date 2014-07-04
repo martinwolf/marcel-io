@@ -32,10 +32,40 @@
 
 .section--myt {
     background-color: #fffefb;
-    background-image: url(../../img/myt-bg.jpg);
+    background-image: url(../img/myt-bg.jpg);
 
     @include breakpoint(retina) {
-        background-image: url(../../img/myt-bg@2x.jpg);
-        background-size: 50% 50%;
+        background-image: url(../img/myt-bg@2x.jpg);
+        background-size: 100% auto;
+    }
+    
+    @include breakpoint(bp2.5) {
+        background-image: none;
+    }
+}
+
+.section--psc {
+    position: relative;
+    background-image: url(../img/psc-bg.png);
+    background-image: linear-gradient(to bottom, #ffffff 0%,#ebf7ff 100%);
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -350px;
+        width: 700px;
+        height: 381px;
+        background-image: url(../img/psc-bg.png);
+
+        @include breakpoint(retina) {
+            background-image: url(../img/psc-bg@2x.png);
+            background-size: cover;
+        }
+
+        @include breakpoint(bp2.5) {
+            background-image: none;
+        }
     }
 }

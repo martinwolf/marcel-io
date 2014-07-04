@@ -25,6 +25,11 @@
             @content;
         }
     }
+    @if $point == bp2.5 {
+        @media (max-width: 480px) {
+            @content;
+        }
+    }
     @if $point == bp3 {
         @media (max-width: 400px) {
             @content;
