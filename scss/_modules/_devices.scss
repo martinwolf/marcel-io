@@ -38,7 +38,16 @@
 }
 
 .device--ipad {
+    width: 560px;
+    height: 620px;
+    background-image: url(../img/ipad.svg);
+    background-size: 560px;
 
+    @media (max-width: 700px) {
+        width: 230px;
+        height: 255px;
+        background-size: 230px;
+    }
 }
 
 .device__content {
@@ -85,5 +94,19 @@
         left: 17px;
         width: 196px;
         height: 326px;
+    }
+}
+
+.device__content--ipad {
+    top: 64px;
+    left: 52px;
+    width: 456px;
+    height: 556px;
+
+    @media (max-width: 700px) {
+        top: 27px;
+        left: 22px;
+        width: 186px;
+        height: 228px;
     }
 }
