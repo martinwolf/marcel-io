@@ -8,7 +8,7 @@
     background-color: #fbfbfb;
 
     @include breakpoint(bp2) {
-        padding-bottom: 10rem;
+        padding-bottom: 12rem;
     }
 
     &:before,
@@ -21,26 +21,26 @@
 
     &:before {
         margin-left: -1.4rem;
-        bottom: 8.4rem;
+        bottom: 10.4rem;
         width: 2.8rem;
         height: 2.8rem;
         background-color: #fff;
         border: 1px solid #e1e1e1;
 
         @include breakpoint(bp2) {
-            bottom: 3.4rem;
+            bottom: 6.4rem;
         }
     }
 
     &:after {
         margin-left: -.8rem;
-        bottom: 9rem;
+        bottom: 11rem;
         width: 1.6rem;
         height: 1.6rem;
         background-color: #e1e1e1;
 
         @include breakpoint(bp2) {
-            bottom: 4rem;
+            bottom: 7rem;
         }
     }
 }

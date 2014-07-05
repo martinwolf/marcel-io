@@ -16,12 +16,11 @@ $(document).ready(function() {
 
     $('.switcher-list a').on('click', function(ev) {
 
-//        deviceSlider.reloadSlider();
-        /*$.each(sliders, function(i, slider) {
-            slider.reloadSlider();
-        });*/
-
         var target = $($(this).attr('href'));
+        
+        $(this)
+            .addClass('is-active')
+            .parent().siblings().find('a').removeClass('is-active');
 
         $('.section--' + $(this).data('section')).find('.wrap--slider.is-active')
             .addClass('fadeout')

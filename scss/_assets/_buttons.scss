@@ -56,9 +56,19 @@ $btn__radius: $btn__height/2;
 .btn--myt {
     color: $yellow--myt;
     border-color: $yellow--myt;
+
+    &.is-active {
+        color: #fff;
+        background-color: $yellow--myt;
+    }
 }
 
 .btn--qfm {
     color: $blue--qfm;
     border-color: $blue--qfm;
+
+    &.is-active {
+        color: #fff;
+        background-color: $blue--qfm;
+    }
 }
