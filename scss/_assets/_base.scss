@@ -64,6 +64,8 @@ a {
 }
 
 .wrap--desc {
+    position: relative;
+    z-index: 1;
     max-width: 680px;
     padding-left: 2rem;
     padding-right: 2rem;

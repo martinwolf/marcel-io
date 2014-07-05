@@ -32,7 +32,7 @@
 }
 
 .section--myt {
-    background-color: #fffefb;
+    background-color: #fefdf9;
     background-image: url(../img/myt-bg.jpg);
 
     @include breakpoint(retina) {
@@ -47,7 +47,6 @@
 
 .section--psc {
     position: relative;
-    background-image: url(../img/psc-bg.png);
     background-image: linear-gradient(to bottom, #ffffff 0%,#ebf7ff 100%);
 
     &:after {
@@ -62,6 +61,31 @@
 
         @include breakpoint(retina) {
             background-image: url(../img/psc-bg@2x.png);
+            background-size: cover;
+        }
+
+        @include breakpoint(bp2.5) {
+            background-image: none;
+        }
+    }
+}
+
+.section--qfm {
+    position: relative;
+    background-image: linear-gradient(to bottom, #ffffff 0%,#f7f6f1 100%);
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -512px;
+        width: 1024px;
+        height: 538px;
+        background-image: url(../img/qfm-bg.png);
+
+        @include breakpoint(retina) {
+            background-image: url(../img/qfm-bg@2x.png);
             background-size: cover;
         }
 
