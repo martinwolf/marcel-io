@@ -17,10 +17,20 @@
     margin: 0 auto 4.5rem;
 
     > span {
+        position: relative;
+        z-index: -1;
         display: inline-block;
-        padding: 1rem .7rem;
-        background-color: #fffdd0;
+        margin-right: -1.5rem;
+        margin-left: -1.5rem;
+        padding: .8rem 2rem 1.2rem 1.5rem;
         white-space: nowrap;
+        background-image: url(../img/blot.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @include breakpoint(retina) {
+            background-image: url(../img/blot@2x.jpg);
+        }
     }
 }
 
