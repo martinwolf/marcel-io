@@ -122,20 +122,3 @@ p {
     height: 85px;
     margin: 0 auto 2rem;
 }
-
-.developed-by {
-    position: absolute;
-    bottom: 2rem;
-    left: 0;
-    width: 100%;
-    margin-bottom: 0;
-    color: #666;
-    text-align: center;
-
-    > a {
-        display: inline-block;
-        color: #666;
-        line-height: 1.2;
-        border-bottom: 1px solid #acacac;
-    }
-}
