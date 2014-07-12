@@ -35,9 +35,41 @@
 }
 
 .site-nav--header {
+    margin-bottom: 3rem;
     > li {
         @include breakpoint(bp1) {
             width: 30%;
+        }
+    }
+}
+
+.availability {
+    margin-bottom: 0;
+
+    &::before {
+        content: '';
+        position: relative;
+        top: .1rem;
+        display: inline-block;
+        margin-right: .9rem;
+        width: 13px;
+        height: 13px;
+        line-height: 1;
+        border-radius: 50%;
+    }
+
+    &.is-available {
+        &::before {
+            background-color: #72e200;
+        }
+    }
+
+    > a {
+        color: $grey;
+        transition: color .2s ease-in, border .2s ease-in;
+
+        &:hover, &:focus {
+            color: $blue;
         }
     }
 }
