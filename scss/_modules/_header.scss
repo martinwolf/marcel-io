@@ -63,13 +63,4 @@
             background-color: #72e200;
         }
     }
-
-    > a {
-        color: $grey;
-        transition: color .2s ease-in, border .2s ease-in;
-
-        &:hover, &:focus {
-            color: $blue;
-        }
-    }
 }
