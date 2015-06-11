@@ -63,4 +63,10 @@
             background-color: #72e200;
         }
     }
+
+    &.is-not-available {
+        &::before {
+            background-color: #d80000;
+        }
+    }
 }
